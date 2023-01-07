@@ -53,6 +53,6 @@ system(
 #         extract rust sudo python zsh-autosuggestions
 #ZSH_THEME
 #         gnzh
-
+system(s+p+ "--remove amdvlk "+n)
 time.sleep(4)
 system("reboot")
