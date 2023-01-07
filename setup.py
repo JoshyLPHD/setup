@@ -8,7 +8,7 @@ system(s + p + "-Syyu " + n)
 system(
     s
     + p
-    + "-S  --needed git neofetch xorg plasma mkinitcpio plasma-wayland-session nano sl xorg discord dbus libxtst sddm htop base-devel go wget glibc llvm curl make gcc jdk8-openjdk steam zsh "
+    + "-S  --needed git neofetch xorg plasma firefox mkinitcpio plasma-wayland-session nano sl xorg discord dbus libxtst sddm htop base-devel go wget glibc llvm curl make gcc jdk8-openjdk steam zsh "
     + n
 )
 system("sudo systemctl enable sddm.service && sudo systemctl enable NetworkManager.service")
@@ -20,7 +20,7 @@ system(
 
 system("yay -Syyu " + n)
 
-system("yay -S --needed partitionmanager sweeper kcalc kmousetool filelight plasma-systemmonitor prismlauncher-bin lapce-nightly-bin megasync-bin timeshift visual-studio-code-bin " + n)
+system("yay -S --needed partitionmanager buildah podman  jre17-openjdk brave-bin sweeper kcalc kmousetool  filelight plasma-systemmonitor prismlauncher-bin lapce-nightly-bin megasync-bin timeshift visual-studio-code-bin " + n)
 
 #system(
 #    "cd /tmp && wget https://mega.nz/linux/repo/Arch_Extra/x86_64/megasync-x86_64.pkg.tar.zst && sudo pacman -U megasync-x86_64.pkg.tar.zst --needed "
