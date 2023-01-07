@@ -20,7 +20,7 @@ system(
 
 system("yay -Syyu " + n)
 
-system("yay -S --needed prismlauncher-bin megasync-bin timeshift visual-studio-code-bin " + n)
+system("yay -S --needed prismlauncher-bin lapce-nightly-bin megasync-bin timeshift visual-studio-code-bin " + n)
 
 #system(
 #    "cd /tmp && wget https://mega.nz/linux/repo/Arch_Extra/x86_64/megasync-x86_64.pkg.tar.zst && sudo pacman -U megasync-x86_64.pkg.tar.zst --needed "
