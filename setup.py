@@ -8,7 +8,7 @@ system(s + p + "-Syyu " + n)
 system(
     s
     + p
-    + "-S  --needed git neofetch xorg plasma plasma-wayland-session kde-applications nano sl xorg discord dbus libxtst sddm htop base-devel go wget glibc llvm curl make gcc jdk8-openjdk steam zsh "
+    + "-S  --needed git neofetch xorg plasma mkinitcpio plasma-wayland-session kde-applications nano sl xorg discord dbus libxtst sddm htop base-devel go wget glibc llvm curl make gcc jdk8-openjdk steam zsh "
     + n
 )
 system("sudo systemctl enable sddm.service && sudo systemctl enable NetworkManager.service")
