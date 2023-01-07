@@ -11,7 +11,7 @@ system(
     + "-S  --needed git neofetch xorg plasma mesa firefox mkinitcpio plasma-wayland-session nano sl xorg discord dbus libxtst sddm htop base-devel go wget glibc llvm curl make gcc jdk8-openjdk steam zsh "
     + n
 )
-system("sudo systemctl enable sddm.service && sudo systemctl enable NetworkManager.service")
+
 
 system(
     "cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --needed "
@@ -54,6 +54,7 @@ system(
 #         extract rust sudo python zsh-autosuggestions
 #ZSH_THEME
 #         gnzh
+system("sudo systemctl enable sddm.service && sudo systemctl enable NetworkManager.service")
 system(s+p+ "--remove amdvlk "+n)
 time.sleep(4)
 system("reboot")
