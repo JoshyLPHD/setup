@@ -29,6 +29,7 @@ system("yay -S --needed prismlauncher-bin lapce-nightly-bin megasync-bin timeshi
 system("curl https://sh.rustup.rs -sSf | sh -s -- -y")
 system("rustup update")
 system("rustup toolchain install nightly")
+system("rustup component add rust-src")
 system(
     'sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"'
 )
