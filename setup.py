@@ -20,7 +20,7 @@ system(
 
 system("yay -Syyu " + n)
 
-system("yay -S --needed partitionmanager buildah podman brave-bin dolphin ark konsole jre17-openjdk brave-bin sweeper kcalc kmousetool  filelight plasma-systemmonitor prismlauncher-bin lapce-nightly-bin megasync-bin timeshift visual-studio-code-bin " + n)
+system("yay -S --needed partitionmanager firewalld buildah podman brave-bin dolphin ark konsole jre17-openjdk brave-bin sweeper kcalc kmousetool  filelight plasma-systemmonitor prismlauncher-bin lapce-nightly-bin megasync-bin timeshift visual-studio-code-bin " + n)
 
 #system(
 #    "cd /tmp && wget https://mega.nz/linux/repo/Arch_Extra/x86_64/megasync-x86_64.pkg.tar.zst && sudo pacman -U megasync-x86_64.pkg.tar.zst --needed "
