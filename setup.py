@@ -11,6 +11,7 @@ system(
     + "-S  --needed git yay neofetch xorg plasma plasma-wayland-session kde-applications nano sl xorg discord dbus libxtst sddm htop base-devel go wget glibc llvm cmake neovim curl make gcc jdk8-openjdk steam zsh "
     + n
 )
+system("sudo systemctl enable sddm.service && sudo systemctl enable NetworkManager.service")
 
 #system(
 #    "cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --needed "
