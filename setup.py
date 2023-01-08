@@ -8,7 +8,7 @@ system(s + p + "-Syyu " + n)
 system(
     s
     + p
-    + "-S  --needed git neofetch xorg plasma egl-wayland mesa firefox mkinitcpio plasma-wayland-session nano sl xorg discord dbus sddm htop base-devel wget curl make gcc jdk8-openjdk steam zsh "
+    + "-S  --needed git neofetch xorg plasma egl-wayland mesa go firefox mkinitcpio plasma-wayland-session nano sl xorg discord dbus sddm htop base-devel wget curl make gcc jdk8-openjdk steam zsh "
     + n
 )
 
