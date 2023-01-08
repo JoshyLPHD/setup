@@ -30,6 +30,7 @@ system("curl https://sh.rustup.rs -sSf | sh -s -- -y")
 system("rustup update")
 system("rustup toolchain install nightly")
 system("rustup component add rust-src")
+system("rustup target install x86_64-pc-windows-gnu ")
 system(
     'sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"'
 )
