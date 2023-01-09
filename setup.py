@@ -20,7 +20,7 @@ system(
 
 system("yay -Syyu " + n)
 
-system("yay -S --needed partitionmanager firewalld buildah podman brave-bin dolphin ark konsole jre17-openjdk brave-bin sweeper kcalc kmousetool  filelight plasma-systemmonitor prismlauncher-bin lapce-nightly-bin megasync-bin timeshift visual-studio-code-bin " + n)
+system("yay -S --needed partitionmanager firewalld podman brave-bin dolphin ark konsole jre17-openjdk brave-bin sweeper kcalc kmousetool  filelight plasma-systemmonitor prismlauncher-bin lapce-nightly-bin megasync-bin timeshift-bin visual-studio-code-bin " + n)
 
 #system(
 #    "cd /tmp && wget https://mega.nz/linux/repo/Arch_Extra/x86_64/megasync-x86_64.pkg.tar.zst && sudo pacman -U megasync-x86_64.pkg.tar.zst --needed "
@@ -31,16 +31,12 @@ system("rustup update")
 system("rustup toolchain install nightly")
 system("rustup component add rust-src")
 system("rustup target install x86_64-pc-windows-gnu ")
-system(
-    'sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"'
-)
+
 #system(
 #    "cd /tmp && git clone https://AUR.archlinux.org/visual-studio-code-bin.git && cd visual-studio-code-bin/ && makepkg -si --needed "
 #    + n
 #)
-system(
-    "cd /tmp && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
-)
+
 # copy this two lines to .bashrc
 #
 #export PATH="/usr/local/go/bin:$PATH"
@@ -55,7 +51,12 @@ system(
 #         extract rust sudo python zsh-autosuggestions
 #ZSH_THEME
 #         gnzh
+system(
+    "cd /tmp && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+)
+system(
+    'sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"'
+)
 system("sudo systemctl enable sddm.service && sudo systemctl enable NetworkManager.service")
 system(s+p+ "--remove amdvlk "+n)
-time.sleep(4)
-system("reboot")
+print("you should reboot")
