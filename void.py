@@ -3,7 +3,7 @@ from os import system
 s= "sudo "
 xi="xbps-install -S "
 
-system(s+xi+ "flatpak sl nano htop -y")
+system(s+xi+ "flatpak sl dbus xorg kde5 nano htop -y")
 system("flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo")
 system("flatpak install flathub com.discordapp.Discord")
 system("flatpak install flathub com.valvesoftware.Steam")
