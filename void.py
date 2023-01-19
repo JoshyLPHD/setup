@@ -3,7 +3,7 @@ from os import system
 s= "sudo "
 xi="xbps-install -S "
 system(s+"xbps-install -Su -y")
-system(s+xi+ "flatpak sl sddm konsole pulseaudio dbus xorg kde5 zsh wget curl nano zsh-autosuggestions htop -y")
+system(s+xi+ "flatpak sl sddm konsole timeshift partitionmanager filelight pulseaudio dbus xorg kde5 zsh wget curl nano zsh-autosuggestions htop -y")
 
 system(s+"flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo")
 system(s+"flatpak install flathub com.discordapp.Discord -y")
@@ -18,7 +18,6 @@ system(s+"flatpak install flathub com.obsproject.Studio -y")
 system(s+"flatpak install flathub com.usebottles.bottles -y")
 system(s+"flatpak install flathub dev.lapce.lapce -y")
 system(s+"flatpak install flathub org.gnome.World.PikaBackup -y")
-system(s+"flatpak install flathub org.kde.filelight -y")
 #system(s+"")
 #system(s+"")
 #system(s+"")
