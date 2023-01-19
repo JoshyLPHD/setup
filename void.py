@@ -12,13 +12,22 @@ system(s+"flatpak install flathub com.brave.Browser -y ")
 system(s+"flatpak install flathub org.prismlauncher.PrismLauncher -y ")
 system(s+"flatpak install flathub com.visualstudio.code -y ")
 system(s+"flatpak install flathub nz.mega.MEGAsync -y")
-system("")
+system(s+"flatpak install flathub com.github.tchx84.Flatseal -y")
+system(s+"flatpak install flathub net.davidotek.pupgui2 -y")
+system(s+"flatpak install flathub com.obsproject.Studio -y")
+system(s+"flatpak install flathub com.usebottles.bottles -y")
+system(s+"flatpak install flathub dev.lapce.lapce -y")
+system(s+"flatpak install flathub org.gnome.World.PikaBackup -y")
+#system(s+"")
+#system(s+"")
+#system(s+"")
+#system(s+"")
 system(s+"chsh -s $(which zsh)")
 system('sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
 
 
 #
 #pluginsgit 
-#         extract rust sudo python zsh-autosuggestions
+#         extract rust sudo python
 #ZSH_THEME
 #         gnzh
