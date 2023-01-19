@@ -17,3 +17,8 @@ system(s+"chsh -s $(which zsh)")
 system('sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
 
 
+#
+#pluginsgit 
+#         extract rust sudo python zsh-autosuggestions
+#ZSH_THEME
+#         gnzh
