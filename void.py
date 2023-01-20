@@ -19,13 +19,13 @@ system(s+"flatpak install flathub com.usebottles.bottles -y")
 system(s+"flatpak install flathub dev.lapce.lapce -y")
 #system(s+"")
 #system(s+"")
-#system(s+"")
+
 system(s+"chsh -s $(which zsh)")
 system('sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
+system(s+"git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
 system(s+" ln -s /etc/sv/dbus /var/service")
 system(s+" ln -s /etc/sv/sddm /var/service ")
 system("sudo reboot")
-
 
 #
 #pluginsgit 
