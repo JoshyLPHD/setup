@@ -29,6 +29,6 @@ system("sudo reboot")
 
 #
 #pluginsgit 
-#         extract rust sudo python
+#         zsh-autosuggestions extract rust sudo python
 #ZSH_THEME
 #         gnzh
