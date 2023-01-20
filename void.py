@@ -18,7 +18,6 @@ system(s+"flatpak install flathub com.obsproject.Studio -y")
 system(s+"flatpak install flathub com.usebottles.bottles -y")
 system(s+"flatpak install flathub dev.lapce.lapce -y")
 #system(s+"")
-#system(s+"")
 
 system(s+"chsh -s $(which zsh)")
 system('sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
