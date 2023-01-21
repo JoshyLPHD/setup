@@ -1,5 +1,5 @@
 from os import system
-
+from time import sleep
 s= "sudo "
 xi="xbps-install -S "
 system(s+"xbps-install -Su -y")
