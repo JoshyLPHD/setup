@@ -1,5 +1,5 @@
 from os import system
-
+from time import sleep
 s= "sudo "
 xi="xbps-install -S "
 #system(s+"xbps-install -Su -y")
@@ -24,6 +24,7 @@ system('sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/mast
 system(s+"git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
 #system(s+" ln -s /etc/sv/dbus /var/service")
 #system(s+" ln -s /etc/sv/sddm /var/service ")
+sleep(3)
 system("sudo reboot")
 
 #
