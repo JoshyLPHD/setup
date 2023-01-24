@@ -10,5 +10,6 @@ system(s+"flatpak remote-add --if-not-exists flathub https://flathub.org/repo/fl
 system(s+" ln -s /etc/sv/dbus /var/service")
 system(s+" ln -s /etc/sv/sddm /var/service ")
 system(s+"chsh -s $(which zsh)")
+system(s+" Xorg -configure")
 sleep(3)
 system("sudo reboot")
