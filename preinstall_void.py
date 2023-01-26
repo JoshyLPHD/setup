@@ -5,6 +5,8 @@ xi="xbps-install -S "
 system("cd ~/ && mkdir Download && mkdir Dokumente")
 system(s+"xbps-install -Su -y")
 system(s+xi+ "flatpak helix sweeper mesa bluez plasma-firewall ufw dolphin sl alacritty sddm gcc konsole timeshift partitionmanager filelight pulseaudio dbus xorg kde5 zsh wget curl nano htop -y")
+system("cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles")
+system("ln -s ~/.dotfiles/.zshrc ~/.zshrc && ln -s ~/.dotfiles/zshenv ~/.zshenv")
 
 system(s+"flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo")
 
