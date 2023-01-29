@@ -24,6 +24,7 @@ system(s+"git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTO
 system("rm ~/.zshrc && rm ~/.zshenv")
 system("ln -s ~/.dotfiles/.zshrc ~/.zshrc && ln -s ~/.dotfiles/zshenv ~/.zshenv")
 system(s+"modprobe nbd max_part=8")
-
+system(s+"rm /var/service/wpa_supplicant")
+system(s+"ln -s /etc/sv/NetworkManager /var/service")
 sleep(3)
 system("sudo reboot")
