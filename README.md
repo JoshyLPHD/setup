@@ -1,7 +1,7 @@
 # setup
 
 
-#this is for voidlinux musl
+this is for voidlinux musl
 I mean the base version
 
 
