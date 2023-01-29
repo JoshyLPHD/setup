@@ -31,6 +31,6 @@ system(s+"modprobe nbd max_part=8")
 system(s+"rm /var/service/wpa_supplicant")
 system(s+"ln -s /etc/sv/NetworkManager /var/service")
 for service in services:
-  system(s+"ln -s /etc/sv/{service}   /var/service")
+  system(s+f"ln -s /etc/sv/{service}   /var/service")
 sleep(3)
 system("sudo reboot")
