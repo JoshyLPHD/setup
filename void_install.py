@@ -7,7 +7,7 @@ services=["wpa_supplicant", "virtqemud" ,"virtlogd" ,"virtstoraged", "virtnetwor
 system("cd ~/ && mkdir Downloads && mkdir Dokumente")
 system(s+"xbps-install -Su -y")
 ##alacritty
-system(s+xi+ "flatpak helix mesa bluez qemu virt plasma-firewall ufw dolphin sl make sddm gcc konsole timeshift partitionmanager filelight pulseaudio dbus xorg kde5 zsh wget curl nano htop -y")
+system(s+xi+ "flatpak helix mesa bluez qemu virtmanager plasma-firewall ufw dolphin sl make sddm gcc konsole timeshift partitionmanager filelight pulseaudio dbus xorg kde5 zsh wget curl nano htop -y")
 system("cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles")
 
 system(s+"flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo")
