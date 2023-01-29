@@ -5,7 +5,7 @@ xi="xbps-install -S "
 system("cd ~/ && mkdir Download && mkdir Dokumente")
 system(s+"xbps-install -Su -y")
 ##alacritty
-system(s+xi+ "flatpak helix mesa bluez plasma-firewall ufw dolphin sl make sddm gcc konsole timeshift partitionmanager filelight pulseaudio dbus xorg kde5 zsh wget curl nano htop -y")
+system(s+xi+ "flatpak helix mesa bluez qemu virt plasma-firewall ufw dolphin sl make sddm gcc konsole timeshift partitionmanager filelight pulseaudio dbus xorg kde5 zsh wget curl nano htop -y")
 system("cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles")
 
 system(s+"flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo")
@@ -23,7 +23,7 @@ system('sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/mast
 system(s+"git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
 system("rm ~/.zshrc && rm ~/.zshenv")
 system("ln -s ~/.dotfiles/.zshrc ~/.zshrc && ln -s ~/.dotfiles/zshenv ~/.zshenv")
-
+system(s+"modprobe nbd max_part=8")
 
 sleep(3)
 system("sudo reboot")
