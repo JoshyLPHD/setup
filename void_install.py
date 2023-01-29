@@ -7,7 +7,7 @@ services=[ "virtqemud" ,"virtlogd" ,"virtstoraged", "virtnetworkd" ,"dnsmasq" ,"
 system("cd ~/ && mkdir Downloads && mkdir Dokumente")
 system(s+"xbps-install -Su -y")
 ##alacritty
-system(s+xi+ "flatpak helix mesa bluez qemu virt-manager-tools virt-manager plasma-firewall ufw dolphin sl make sddm gcc konsole timeshift partitionmanager filelight pulseaudio dbus xorg kde5 zsh wget curl nano htop -y")
+system(s+xi+ "flatpak helix qbittorrent mesa bluez qemu virt-manager-tools virt-manager plasma-firewall ufw dolphin sl make sddm gcc konsole timeshift partitionmanager filelight pulseaudio dbus xorg kde5 zsh wget curl nano htop -y")
 system("cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles")
 
 system(s+"flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo")
@@ -30,7 +30,7 @@ system("ln -s ~/.dotfiles/.zshrc ~/.zshrc && ln -s ~/.dotfiles/zshenv ~/.zshenv"
 system(s+"modprobe nbd max_part=8")
 system(s+"rm /var/service/wpa_supplicant")
 system(s+"rm /var/service/dhcpcd")
-system(s+"ln -s /etc/sv/NetworkManager /var/service/")
+#system(s+"ln -s /etc/sv/NetworkManager /var/service/")
 for service in services:
   system(s+f"ln -s /etc/sv/{service}   /var/service/")
 sleep(3)
