@@ -4,7 +4,7 @@ s= "sudo "
 xi="xbps-install -S "
 
 services=["wpa_supplicant", "virtqemud" ,"virtlogd" ,"virtstoraged", "virtnetworkd" ,"dnsmasq" ,"iptables", "dbus", "sddm", "ufw" ,"pulseaudio"]
-system("cd ~/ && mkdir Download && mkdir Dokumente")
+system("cd ~/ && mkdir Downloads && mkdir Dokumente")
 system(s+"xbps-install -Su -y")
 ##alacritty
 system(s+xi+ "flatpak helix mesa bluez qemu virt plasma-firewall ufw dolphin sl make sddm gcc konsole timeshift partitionmanager filelight pulseaudio dbus xorg kde5 zsh wget curl nano htop -y")
