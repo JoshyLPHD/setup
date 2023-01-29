@@ -3,7 +3,7 @@ from time import sleep
 s= "sudo "
 xi="xbps-install -S "
 
-services=["wpa_supplicant", "virtqemud" ,"virtlogd" ,"virtstoraged", "virtnetworkd" ,"dnsmasq" ,"iptables", "dbus", "sddm", "ufw" ,"pulseaudio"]
+services=[ "virtqemud" ,"virtlogd" ,"virtstoraged", "virtnetworkd" ,"dnsmasq" ,"iptables", "dbus", "sddm", "ufw" ,"pulseaudio"]
 system("cd ~/ && mkdir Downloads && mkdir Dokumente")
 system(s+"xbps-install -Su -y")
 ##alacritty
