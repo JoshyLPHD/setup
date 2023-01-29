@@ -7,8 +7,6 @@ system(s+"xbps-install -Su -y")
 ##alacritty
 system(s+xi+ "flatpak helix sweeper mesa bluez plasma-firewall ufw dolphin sl  sddm gcc konsole timeshift partitionmanager filelight pulseaudio dbus xorg kde5 zsh wget curl nano htop -y")
 system("cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles")
-system("rm ~/.zshrc && rm ~/.zshenv")
-system("ln -s ~/.dotfiles/.zshrc ~/.zshrc && ln -s ~/.dotfiles/zshenv ~/.zshenv")
 
 system(s+"flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo")
 
@@ -21,6 +19,11 @@ system("rustup update")
 system("rustup toolchain install nightly")
 system("rustup component add rust-src")
 system("rustup target install x86_64-pc-windows-gnu ")
+system('sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
+system(s+"git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
+system("rm ~/.zshrc && rm ~/.zshenv")
+system("ln -s ~/.dotfiles/.zshrc ~/.zshrc && ln -s ~/.dotfiles/zshenv ~/.zshenv")
+
 
 sleep(3)
 system("sudo reboot")
