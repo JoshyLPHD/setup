@@ -1,0 +1,1 @@
+sudo ./mklive.sh -a amd64 -k de-latin1-nodeadkeys -b flatpak helix mesa bluez plasma-firewall ufw dolphin sl make sddm gcc konsole timeshift partitionmanager filelight pulseaudio dbus xorg kde5 zsh wget curl nano htop
