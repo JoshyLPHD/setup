@@ -23,5 +23,8 @@ system(s+"flatpak install flathub com.boxy_svg.BoxySVG -y")
 #system(s+"flatpak install flathub org.gimp.GIMP -y")
 #system(s+"flatpak install flathub com.usebottles.bottles -y")
 #system(s+"flatpak install flathub dev.lapce.lapce -y")
+
+system(s+"rm -fr /var/lib/flatpak/repo")
+
 sleep(3)
 system("reboot")
