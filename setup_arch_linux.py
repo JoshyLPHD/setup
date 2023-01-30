@@ -1,7 +1,7 @@
 from os import system
 import time
 
-n = "--noconfirm "
+n = " --noconfirm "
 p = "pacman "
 s = "sudo "
 system(s + p + "-Syyu " + n)
@@ -14,7 +14,7 @@ system(
 system("cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles")
 system("yay -Syyu " + n)
 
-system("yay -S --needed jdk17-openjdk partitionmanager firewalld podman brave-bin dolphin ark konsole jre17-openjdk brave-bin sweeper kcalc kmousetool  filelight plasma-systemmonitor prismlauncher-bin lapce-nightly-bin megasync-bin timeshift-bin visual-studio-code-bin " + n)
+system("yay -S --needed blueman bluez filelight virt-manager qemu-tools qemu-system-x86 qemu-img jdk17-openjdk partitionmanager firewalld podman brave-bin dolphin ark konsole jre17-openjdk brave-bin kcalc  filelight plasma-systemmonitor prismlauncher-bin  mvirtegasync-bin timeshift-bin visual-studio-code-bin " + n)
 
 #system(
 #    "cd /tmp && wget https://mega.nz/linux/repo/Arch_Extra/x86_64/megasync-x86_64.pkg.tar.zst && sudo pacman -U megasync-x86_64.pkg.tar.zst --needed "
