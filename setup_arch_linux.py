@@ -27,7 +27,7 @@ system("rustup component add rust-src")
 system("rustup target install x86_64-pc-windows-gnu ")
 
 system('sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
-system("cd /tmp && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
+system(s+" git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
 system("rm ~/.zshrc && rm ~/.zshenv")
 system("ln -s ~/.dotfiles/.zshrc ~/.zshrc && ln -s ~/.dotfiles/zshenv ~/.zshenv")
 system(s+"chsh -s $(which zsh)")
