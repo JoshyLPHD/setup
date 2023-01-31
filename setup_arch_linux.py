@@ -8,7 +8,7 @@ system(s + p + "-Syyu " + n)
 system(
     s
     + p
-    + "-S  --needed git neofetch xorg plasma egl-wayland mesa go firefox mkinitcpio plasma-wayland-session nano sl xorg discord dbus sddm htop base-devel  wget curl make gcc jdk8-openjdk steam zsh "
+    + "-S  --needed git neofetch xorg plasma egl-wayland mesa go mkinitcpio plasma-wayland-session nano sl discord dbus sddm htop base-devel  wget curl make gcc jdk8-openjdk steam zsh "
     + n +" && cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --needed "+n
 )
 system("cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles")
@@ -25,7 +25,7 @@ system("rustup update")
 system("rustup toolchain install nightly")
 system("rustup component add rust-src")
 system("rustup target install x86_64-pc-windows-gnu ")
-
+system(s+"rm -fr ~/.oh-my-zsh")
 system('sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
 system(s+" git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
 system("rm ~/.zshrc && rm ~/.zshenv")
