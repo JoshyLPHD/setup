@@ -12,7 +12,7 @@ eval '$s  $p -S $nn git clang sway neofetch xorg egl-wayland mesa go mkinitcpio 
 mkdir ~/.dotfiles
 eval "cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles"
 eval "yay -Syu   $n"
-eval "yay -S $nn wayland xwayland wayland-protocols xorg-xwayland  wayland-utils inetutils fusepak blueman bluez virt-manager qemu-tools qemu-system-x86 vscodium-bin qemu-img jdk17-openjdk partitionmanager firewalld podman brave-bin dolphin ark konsole jre17-openjdk brave-bin kcalc  filelight plasma-systemmonitor prismlauncher-bin  timeshift-bin   $n"
+eval "yay -S $nn wayland xwayland zls-bin zig-dev-bin wayland-protocols xorg-xwayland  wayland-utils inetutils fusepak blueman bluez virt-manager qemu-tools qemu-system-x86 vscodium-bin qemu-img jdk17-openjdk partitionmanager firewalld podman brave-bin dolphin ark konsole jre17-openjdk brave-bin kcalc  filelight plasma-systemmonitor prismlauncher-bin  timeshift-bin   $n"
 
 eval "curl https://sh.rustup.rs -sSf | sh -s -- -y"
 eval "rustup update"
