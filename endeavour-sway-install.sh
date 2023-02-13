@@ -1,19 +1,13 @@
-from os import system
-import time
-
 n = " --noconfirm "
 p = "pacman "
 s = "sudo "
-system(s + p + "-Syyu " + n)
-system(
-    s
-    + p
-    + "-S  --needed git clang neofetch xorg egl-wayland mesa go mkinitcpio nano sl discord dbus htop base-devel  wget curl make gcc jdk8-openjdk steam zsh "
-    + n +" && cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --needed "+n
-)
+s + p + "-Syu " + n
+
+exec    "$s + $p + " -S  --needed git clang sway neofetch xorg egl-wayland mesa go mkinitcpio nano sl discord dbus htop base-devel  wget curl make gcc jdk8-openjdk steam zsh "  + n +" && cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --needed "+$n"
+
 cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles
 yay -Syyu " + n
-yay -S --needed inetutils fusepak blueman bluez virt-manager qemu-tools qemu-system-x86 qemu-img jdk17-openjdk partitionmanager firewalld podman brave-bin dolphin ark konsole jre17-openjdk brave-bin kcalc  filelight plasma-systemmonitor prismlauncher-bin  timeshift-bin visual-studio-code-bin " + n
+yay -S --needed wayland wayland-protocols wayland-utils inetutils fusepak blueman bluez virt-manager qemu-tools qemu-system-x86 qemu-img jdk17-openjdk partitionmanager firewalld podman brave-bin dolphin ark konsole jre17-openjdk brave-bin kcalc  filelight plasma-systemmonitor prismlauncher-bin  timeshift-bin visual-studio-code-bin " + n
 
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 rustup update
