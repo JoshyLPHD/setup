@@ -1,3 +1,6 @@
+#this script is for a minimal install of endeavour os (arch linux)
+
+
 n=" --noconfirm "
 p=" pacman "
 s=" sudo "
@@ -24,7 +27,8 @@ eval "rm ~/.zshrc && rm ~/.zshenv"
 eval "ln -s ~/.dotfiles/.zshrc ~/.zshrc && ln -s ~/.dotfiles/zshenv ~/.zshenv"
 eval "$s chsh -s $(which zsh)"
 eval "$s modprobe nbd max_part=8 "
-echo you should reboot
+echo "you should reboot"
+
 #pluginsgit 
 #         extract rust sudo python zsh-autosuggestions
 #ZSH_THEME
