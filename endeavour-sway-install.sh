@@ -1,10 +1,10 @@
 n=" --noconfirm "
-p="pacman "
-s="sudo "
-c=$s+$p+"-Syu "+$n
+p=" pacman "
+s=" sudo "
+c="$s $p -Syu $n"
 exec=$c
 c='$s + $p + " -S  --needed git clang sway neofetch xorg egl-wayland mesa go mkinitcpio nano sl discord dbus htop base-devel  wget curl make gcc jdk8-openjdk steam zsh "  + n +" && cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --needed "+$n'
-exec    "$s + $p + " -S  --needed git clang sway neofetch xorg egl-wayland mesa go mkinitcpio nano sl discord dbus htop base-devel  wget curl make gcc jdk8-openjdk steam zsh "  + n +" && cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --needed "+$n"
+exec   $c
 
 cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles
 yay -Syyu " + n
