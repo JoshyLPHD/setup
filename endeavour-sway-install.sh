@@ -23,7 +23,7 @@ eval "$s git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM
 eval "rm ~/.zshrc && rm ~/.zshenv"
 eval "ln -s ~/.dotfiles/.zshrc ~/.zshrc && ln -s ~/.dotfiles/zshenv ~/.zshenv"
 eval "$s chsh -s $(which zsh)"
-eval"$s modprobe nbd max_part=8 "
+eval "$s modprobe nbd max_part=8 "
 echo you should reboot
 #pluginsgit 
 #         extract rust sudo python zsh-autosuggestions
