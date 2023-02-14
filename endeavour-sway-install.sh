@@ -7,7 +7,7 @@ s=" sudo "
 nn=" --needed "
 eval "$s $p -Syu $n"
 
-eval '$s  $p -S $nn git clang sway neofetch xorg egl-wayland mesa go mkinitcpio nano sl discord dbus htop base-devel  wget curl make gcc jdk8-openjdk steam zsh $n && cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si  $n'
+eval '$s  $p -S $nn git clang neofetch xorg egl-wayland mesa go mkinitcpio nano sl discord dbus htop base-devel wget curl make gcc jdk8-openjdk steam zsh $n && cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si  $n'
 
 mkdir ~/.dotfiles
 eval "cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles"
