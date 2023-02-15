@@ -1,1 +1,2 @@
-eval
+nv=" nix-env "
+echo "test"
