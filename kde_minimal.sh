@@ -24,6 +24,7 @@ eval "rm ~/.zshrc && rm ~/.zshenv"
 eval "ln -s ~/.dotfiles/.zshrc ~/.zshrc && ln -s ~/.dotfiles/zshenv ~/.zshenv"
 eval "$s chsh -s $(which zsh)"
 eval "echo 'exec zsh' >> ~/.bashrc "
+eval "sudo systemctl enable sddm.service && sudo systemctl enable NetworkManager.service"
 echo "you should reboot"
 
 #pluginsgit 
