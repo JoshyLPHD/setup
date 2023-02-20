@@ -8,7 +8,7 @@ s=" sudo "
 nn=" --needed "
 eval "$s $p -Syu $n"
 
-eval '$s  $p -S $nn git clang plasma-wayland-session xorg egl-wayland mesa go sddm mkinitcpio nano dbus htop base-devel wget curl make gcc jdk8-openjdk zsh $n && cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si  $n'
+eval '$s  $p -S $nn git clang plasma-wayland-session plasma xorg egl-wayland mesa go sddm mkinitcpio nano dbus htop base-devel wget curl make gcc jdk8-openjdk zsh $n && cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si  $n'
 mkdir ~/.local/bin
 
 mkdir ~/.dotfiles
