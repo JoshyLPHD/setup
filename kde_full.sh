@@ -15,7 +15,7 @@ mkdir ~/.dotfiles
 eval "cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles"
 
 eval "yay -Syu   $n"
-eval "yay -S $nn wayland git neofetch xorg plasma ttf-liberations egl-wayland vscodium-bin mesa go mkinitcpio plasma-wayland-session nano sl discord dbus sddm htop base-devel  wget curl make gcc jdk8-openjdk steam zsh wayland-protocols xorg-xwayland  wayland-utils inetutils fusepak blueman bluez  jdk17-openjdk partitionmanager firewalld neofetch dolphin ark konsole jre17-openjdk kcalc plasma-systemmonitor timeshift-bin   $n"
+eval "yay -S $nn wayland git neofetch xorg plasma ttf-liberations egl-wayland podman  vscodium-bin mesa go mkinitcpio prismlauncher-bin plasma-wayland-session nano sl discord dbus sddm htop base-devel  wget curl make gcc jdk8-openjdk steam zsh wayland-protocols xorg-xwayland  wayland-utils inetutils fusepak blueman bluez  jdk17-openjdk partitionmanager firewalld neofetch dolphin ark konsole jre17-openjdk kcalc plasma-systemmonitor timeshift-bin   $n"
 
 eval "$s rm -fr ~/.oh-my-zsh"
 eval 'sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended'
