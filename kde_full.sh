@@ -24,6 +24,12 @@ eval "rm ~/.zshrc && rm ~/.zshenv"
 eval "ln -s ~/.dotfiles/.zshrc ~/.zshrc && ln -s ~/.dotfiles/zshenv ~/.zshenv"
 eval "$s chsh -s $(which zsh)"
 eval "echo 'exec zsh' >> ~/.bashrc "
+
+eval "curl https://sh.rustup.rs -sSf | sh -s -- -y"
+eval "rustup toolchain install nightly"
+eval "rustup component add rust-src"
+eval "rustup target install x86_64-pc-windows-gnu "
+
 eval "sudo systemctl enable sddm.service && sudo systemctl enable NetworkManager.service"
 echo "you should reboot"
 
