@@ -4,7 +4,7 @@
 
 n=" --noconfirm "
 p=" pacman "
-s=" {which sudo } "
+s=" sudo "
 nn=" --needed "
 eval "$s $p -Syu $n"
 
