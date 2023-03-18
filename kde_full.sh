@@ -42,7 +42,7 @@ localectl set-keymap de-latin1-nodeadkeys
 
 eval "cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si  $n"
 eval "yay -S sddm-git $n --useask"
-eval '  yay -S $nn git clang wget curl make ttf-liberation cmake mesa neofetch  gcc plasma-wayland-session pipewire-alsa wireplumber pipwire-jack xorg   mkinitcpio nano dbus htop base-devel wget curl make gcc jdk8-openjdk zsh $n '
+eval '  yay -S $nn git which clang wget curl make ttf-liberation cmake mesa neofetch  gcc plasma-wayland-session pipewire-alsa wireplumber pipwire-jack xorg   mkinitcpio nano dbus htop base-devel wget curl make gcc jdk8-openjdk zsh $n '
 mkdir ~/.local/bin
 
 mkdir ~/.dotfiles
