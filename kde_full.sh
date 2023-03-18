@@ -32,7 +32,7 @@ test=1
 
 fi
 
-if [ test==1 ]then 
+if [ test==0 ]then 
 
 
 echo "please give amd,nvidia or vm as arguments"
