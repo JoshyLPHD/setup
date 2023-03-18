@@ -31,6 +31,17 @@ eval "sudo pacman -S vulkan-virtio lib32-vulkan-virtio $n"
 test=1
 
 fi
+
+if [ test==1 ]then 
+
+
+echo "please give amd,nvidia or vm as arguments"
+exit 1
+fi
+
+localectl set-keymap de-latin1-nodeadkeys
+
+
 eval '$s  $p -S $nn git clang wget curl make ttf-liberation cmake mesa neofetch  gcc plasma-wayland-session pipewire-alsa wireplumber pipwire-jack xorg   mkinitcpio nano dbus htop base-devel wget curl make gcc jdk8-openjdk zsh $n && cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si  $n'
 mkdir ~/.local/bin
 
@@ -38,6 +49,7 @@ mkdir ~/.dotfiles
 eval "cd ~/ && git clone https://bitbucket.org/joshylphd/dotfiles ~/.dotfiles"
 
 eval "yay -Syu   $n"
+eval "yay -S sddm-git $n --useask"
 eval "yay -S $nn wayland 
  plasma  go  egl-wayland   sddm 
 neofetch  plasma   egl-wayland podman gamemode vscodium-bin   mkinitcpio prismlauncher-bin plasma-wayland-session 
