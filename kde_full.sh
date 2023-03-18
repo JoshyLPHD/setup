@@ -25,7 +25,7 @@ then
     test=1
 fi
 
-if [ $1 == "vm"]
+if [ $1 == "vm" ]
 then
     eval "sudo pacman -S vulkan-virtio lib32-vulkan-virtio $n"
     test=1
