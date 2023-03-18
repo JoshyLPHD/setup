@@ -38,7 +38,7 @@ then
     exit 1
 fi
 
-localectl set-keymap de-latin1-nodeadkeys
+sudo localectl set-keymap de-latin1-nodeadkeys
 eval "$s $p -S  fakeroot $n"
 eval "cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si  $n"
 eval "yay -S sddm-git $n --useask"
