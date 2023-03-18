@@ -7,14 +7,31 @@ p=" pacman "
 s=" sudo "
 nn=" --needed "
 eval "$s $p -Syu $n"
-
+test=0
 
 if [ $1=="" ]
 then
   exit 1 
 fi
 
-eval '$s  $p -S $nn git clang wget curl make ttf-liberations cmake mesa neofetch  gcc plasma-wayland-session pipewire-alsa wireplumber pipwire-jack xorg   mkinitcpio nano dbus htop base-devel wget curl make gcc jdk8-openjdk zsh $n && cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si  $n'
+if [ $1=="nvidia" ]
+then 
+  sudo pacman -S nvidia-utils lib32-nvidia-utils
+  test=1
+fi
+if [ $1=="amd" ]
+then 
+  sudo pacman -S amdvlk lib32-amdvlk
+  test=1
+fi
+
+if [ $1=="vm"]
+then
+sudo pacman -S vulkan-virtio lib32-vulkan-virtio $nn
+test=1
+^s
+fi
+eval '$s  $p -S $nn git clang wget curl make ttf-liberation cmake mesa neofetch  gcc plasma-wayland-session pipewire-alsa wireplumber pipwire-jack xorg   mkinitcpio nano dbus htop base-devel wget curl make gcc jdk8-openjdk zsh $n && cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si  $n'
 mkdir ~/.local/bin
 
 mkdir ~/.dotfiles
