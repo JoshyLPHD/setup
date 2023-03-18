@@ -9,34 +9,32 @@ nn=" --needed "
 eval "$s $p -Syu $n"
 test=0
 
-if [ $1=="" ]
+if [ $1 == "" ]
 then
-  exit 1 
+    exit 1 
 fi
 
-if [ $1=="nvidia" ]
+if [ $1 == "nvidia" ]
 then 
- eval "sudo pacman -S nvidia-utils lib32-nvidia-utils $n"
-  test=1
+    eval "sudo pacman -S nvidia-utils lib32-nvidia-utils $n"
+    test=1
 fi
-if [ $1=="amd" ]
+if [ $1 == "amd" ]
 then 
- eval "sudo pacman -S amdvlk lib32-amdvlk $n"
-  test=1
+    eval "sudo pacman -S amdvlk lib32-amdvlk $n"
+    test=1
 fi
 
-if [ $1=="vm"]
+if [ $1 == "vm"]
 then
-eval "sudo pacman -S vulkan-virtio lib32-vulkan-virtio $n"
-test=1
+    eval "sudo pacman -S vulkan-virtio lib32-vulkan-virtio $n"
+    test=1
 
 fi
 
-if [ test==0 ]then 
-
-
-echo "please give amd,nvidia or vm as arguments"
-exit 1
+if [ test == 0 ]then 
+    echo "please give amd,nvidia or vm as arguments"
+    exit 1
 fi
 
 localectl set-keymap de-latin1-nodeadkeys
