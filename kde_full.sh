@@ -33,15 +33,15 @@ then
 fi
 
 if [ test == 0 ]
-then 
+then install kde on arche
     echo "please give amd,nvidia or vm as arguments"
     exit 1
 fi
 
 sudo localectl set-keymap de-latin1-nodeadkeys
 
-eval "$s $p -S  fakeroot make gcc cmake pkgconf $n"
-
+eval "$s $p -S  fakeroot sddm make gcc cmake pkgconf $n"
+eval "$s $p -R sddm $n"
 eval "cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si  $n"
 eval "yay -S sddm-git $n --useask"
 eval '  yay -S $nn git which  clang wget curl make ttf-liberation cmake mesa neofetch   plasma-wayland-session pipewire-alsa wireplumber pipwire-jack xorg   mkinitcpio nano dbus htop base-devel wget curl make gcc jdk8-openjdk zsh $n '
