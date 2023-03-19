@@ -62,15 +62,7 @@ eval "ln -s ~/.dotfiles/.zshrc ~/.zshrc && ln -s ~/.dotfiles/zshenv ~/.zshenv"
 eval "$s chsh -s $(which zsh)"
 eval "echo 'exec zsh' >> ~/.bashrc "
 
-echo '#/bin/sh
-
-eval "curl https://sh.rustup.rs -sSf | sh -s -- -y"
-eval "rustup toolchain install nightly"
-eval "rustup target install x86_64-unknown-linux-musl
-eval "rustup target install x86_64-unknown-none
-eval "rustup target install wasm32-unknown-unknown
-eval "rustup component add rust-src"
-eval "rustup target install x86_64-pc-windows-gnu "' > kekw.tmp
+echo 'curl https://sh.rustup.rs -sSf | sh -s -- -y && rustup toolchain install nightly && rustup target install x86_64-unknown-linux-musl &&  rustup target install x86_64-unknown-none && rustup target install wasm32-unknown-unknown && rustup component add rust-src && rustup target install x86_64-pc-windows-gnu ' > kekw.tmp
 zsh --exec  $(pwd)/kekw.tmp
 rm kekw.tmp -f
 
