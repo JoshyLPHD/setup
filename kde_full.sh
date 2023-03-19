@@ -44,7 +44,7 @@ eval "$s $p -S  fakeroot sddm make gcc cmake pkgconf $n"
 eval "$s $p -R sddm $n"
 eval "cd /tmp/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si  $n"
 eval "yay -S sddm-git $n --useask"
-eval '  yay -S $nn git which  clang wget curl make ttf-liberation cmake mesa neofetch   plasma-wayland-session pipewire-alsa wireplumber pipwire-jack xorg   mkinitcpio nano dbus htop base-devel wget curl make gcc jdk8-openjdk zsh $n '
+eval '  yay -S $nn git which  clang wget curl make ttf-liberation cmake mesa neofetch   plasma-wayland-session pipewire-alsa wireplumber pipewire-jack xorg   mkinitcpio nano dbus htop base-devel wget curl make gcc jdk8-openjdk zsh $n '
 mkdir ~/.local/bin
 
 mkdir ~/.dotfiles
