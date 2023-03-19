@@ -27,7 +27,7 @@ fi
 
 if [ $1 == "vm" ]
 then
-    eval "sudo pacman -S vulkan-virtio lib32-vulkan-virtio lib32-vulkan-mesa-layers $n"
+    eval "sudo pacman -S vulkan-virtio xf86-video-qxl lib32-vulkan-virtio lib32-vulkan-mesa-layers $n"
     test=1
 
 fi
