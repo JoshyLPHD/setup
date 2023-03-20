@@ -53,7 +53,8 @@ eval '  yay -S $nn git which clang wget curl make ttf-liberation cmake mkinitcpi
 eval "yay -S $nn  pipewire-alsa wireplumber pipewire-jack  $n "
 
 
-
+echo "[KSplash]" > ~/.config/ksplashrc
+echo "Theme=org.kde.breeze.desktop" >> ~/.config/ksplashrc
 
 #install plasma
 eval "yay -S $nn $plasma  $n"
