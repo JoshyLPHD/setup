@@ -60,7 +60,7 @@ eval "yay -S $nn $plasma  $n"
 eval "yay -S $nn neofetch gamemode inetutils sl htop fusepak $n"
 
 #install some programs
-eval " yay -S $nn podman  vscodium-bin prismlauncher-bin dbus    jdk8-openjdk steam zsh blueman bluez  jdk17-openjdk partitionmanager firewalld jre17-openjdk timeshift-bin"
+eval " yay -S $nn podman  vscodium-bin prismlauncher-bin dbus  virt-viewer  jdk8-openjdk steam zsh blueman bluez  jdk17-openjdk partitionmanager firewalld jre17-openjdk timeshift-bin"
 
 
 mkdir ~/.local
