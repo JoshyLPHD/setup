@@ -1,6 +1,6 @@
 
 
-plasma=" wayland-protocols mesa xorg xorg-xwayland dolphin kcalc plasma-systemmonitor ark konsole wayland-utils plasma-wayland-session wayland plasma sddm  egl-wayland  "
+plasma=" wayland-protocols mesa xorg xorg-xwayland dolphin kcalc plasma-systemmonitor ark konsole wayland-utils plasma-wayland-session wayland plasma sddm-git  egl-wayland  "
 n=" --noconfirm "
 p=" pacman "
 s=" sudo "
@@ -15,7 +15,7 @@ fi
 
 if [ $1 == "nvidia" ]
 then 
-eval "sudo pacman -S nvidia-utils lib32-nvidia-utils $n"
+eval "sudo pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils $n"
 test=1
 fi
 if [ $1 == "amd" ]
@@ -53,17 +53,14 @@ eval '  yay -S $nn git which clang wget curl make ttf-liberation cmake mkinitcpi
 eval "yay -S $nn  pipewire-alsa wireplumber pipewire-jack  $n "
 
 
-echo "[KSplash]" > ~/.config/ksplashrc
-echo "Theme=org.kde.breeze.desktop" >> ~/.config/ksplashrc
-
 #install plasma
 eval "yay -S $nn $plasma  $n"
 
 #install random
 eval "yay -S $nn neofetch gamemode inetutils sl htop fusepak $n"
 
-#install some desktop programs
-eval " yay -S $nn podman  vscodium-bin prismlauncher-bin  discord dbus sddm   jdk8-openjdk steam zsh blueman bluez  jdk17-openjdk partitionmanager firewalld jre17-openjdk timeshift-bin"
+#install some programs
+eval " yay -S $nn podman  vscodium-bin prismlauncher-bin dbus    jdk8-openjdk steam zsh blueman bluez  jdk17-openjdk partitionmanager firewalld jre17-openjdk timeshift-bin"
 
 
 mkdir ~/.local
